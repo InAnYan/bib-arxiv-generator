@@ -8,9 +8,7 @@ parser.add_argument(
     "--count", type=int, help="Count of entries to retrieve", default=10
 )
 
-parser.add_argument(
-    "--query", type=str, help="Set the search query", default="AI RAG LLM"
-)
+parser.add_argument("--query", type=str, help="Search query", default="AI RAG LLM")
 
 parser.add_argument(
     "--file", type=str, help="Path to generated file", default="result.bib"

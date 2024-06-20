@@ -25,9 +25,11 @@ usage: main.py [-h] [--count COUNT] [--query QUERY] [--file FILE]
 options:
   -h, --help     show this help message and exit
   --count COUNT  Count of entries to retrieve
-  --query QUERY  Set the search query
+  --query QUERY  Search query
   --file FILE    Path to generated file
 ```
+
+Tip: to set the search query properly you can wrap it in double quotes. That way the shell will pass the series of words as one string.
 
 # Use in JabRef
 The primary use for this generator is for making a large `.bib` file for testing the AI functionality in JabRef.
