@@ -1,21 +1,19 @@
-# Description
+# `.bib` file generator with files
+
 A Python script that generates a BibTeX file with various articles from arXiv.
 
-It fetches only `title`, `author`, and `eprint` fields.
+The primary use for this generator is for making a large `.bib` file for testing the AI functionality in JabRef.
 
-# Before running
+JabRef provides a script for generating large `.bib` files, but AI functionality operates on linked files.
 
-Run this:
+## Features
 
-```
-pip install -r -requirements.txt
-```
+- Searches arXiv for papers according to query.
+- Fetches `title`, `author`, and `eprint` fields.
+- Downloads PDF files.
+- Forms a `.bib` file with ordinary count of entries.
 
-The script relies on two packages:
-- `arxiv`: searches for articles using arXiv API,
-- `pybtex`: generates `.bib` files.
-
-# Usage
+## How to Run this Project
 
 *I'll just paste a help message here* 😄
 
@@ -31,7 +29,6 @@ options:
 
 Tip: to set the search query properly you can wrap it in double quotes. That way the shell will pass the series of words as one string.
 
-# Use in JabRef
-The primary use for this generator is for making a large `.bib` file for testing the AI functionality in JabRef.
+## How this Project is Implemented
 
-JabRef provides a script for generating large `.bib` files, but AI functionality operates on linked files.
+It's actually very simple, it has 2 external dependencies: one for arXiv API (for fetching papers), the other is for generating `.bib` entries. They are just combined.
