@@ -15,6 +15,14 @@ JabRef provides a script for generating large `.bib` files, but AI functionality
 
 ## How to Run this Project
 
+Install dependencies:
+
+```sh
+pip install -r requirements.txt
+```
+
+And then run the program:
+
 *I'll just paste a help message here* 😄
 
 ```
